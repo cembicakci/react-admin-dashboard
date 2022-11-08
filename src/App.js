@@ -7,6 +7,7 @@ import './App.css'
 import UserList from "./pages/userList/UserList";
 import User from "./pages/User/User";
 import NewUser from "./pages/newUser/NewUser";
+import ProductList from "./pages/productList/ProductList";
 
 function App() {
   return (
@@ -19,6 +20,11 @@ function App() {
           <Route exact path="/users" element={<UserList />} />
           <Route exact path="/user/:userId" element={<User />} />
           <Route exact path="/newUser" element={<NewUser />} />
+
+          <Route exact path="/products" element={<ProductList />} />
+          <Route exact path="/products/:productId" element={<User />} />
+          <Route exact path="/newProduct" element={<NewUser />} />
+           
         </Routes>
 
       </div>
